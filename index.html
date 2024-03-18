@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextSnap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+</head>
+<body>
+    <header>
+        <label for="">Upload any English or Bengali Text image <br>
+          <input type="file" accept="image/*" id="file" />
+        </label>
+        <div>
+          <input type="radio" name="lang" class="lang" value="eng" checked>
+          <label for="">English</label>
+        </div>
+        <div>
+          <input type="radio" name="lang" class="lang" value="ben">
+          <label for="ben"> Bengali</label>
+        </div>
+      
+        <button id="btn">Extract Text</button>
+      </header>
+      
+      <button id="copyBtn">Copy Text</button>
+      <div id="output"></div>
+      
+      <script src="app.js"></script>
+</body>
+</html>
+
